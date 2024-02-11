@@ -1,37 +1,49 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="description" content="RoboTech 的專屬帳號登入介面"/>
-        <meta name="author" content="杉杉33 | RoboTech"/>
-        <meta name="keywords" content="杉杉, 杉杉33, RoboTech, RoboTech 登入介面"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>RoboTech 帳號登入介面</title>
-        <link rel="stylesheet" href="menu.css">
-    </head>
-    <body>
-        <header>
-        <h1>RoboTech 帳號登入介面</h1>
-        <ul>
-            <li><a href="https://ookokioo8456.github.io">首頁</a></li>
-            <li><a href="https://ookokioo8456.github.io/info.html">關於我們</a></li>
-            <li><a href="https://ookokioo8456.github.io/termsofservice.html">服務條款</a></li>
-        </ul>
-        </header>
-        <main>
-        <section class="login">
-        <h2>登入您的帳號!</h2>
-        <input type="text" placeholder="帳號" required/>
-        <input type="password" placeholder="密碼" required/>
-        <br/>
-        <br/>
-        </section>
-        <section class="login-check">
-        <a href="check.html">確認登入</a>
-        </section>
-        <section class="copyright">
-            <p>Copyright ©️ 杉杉33 2023. All Rights Reserved</p>
-        </section>
-        </main>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>登入介面</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>建立帳號</h1>
+                <input type="email" placeholder="電子郵件">
+                <input type="password" placeholder="密碼">
+                <button>註冊</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>登入帳號</h1>
+                <input type="email" placeholder="電子郵件">
+                <input type="password" placeholder="密碼">
+                <button>登入</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>歡迎回來！</h1>
+                    <p>立即使用您的電子郵件登入！</p>
+                    <button class="hidden" id="login">立即登入</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>嗨，朋友！</h1>
+                    <p>立即註冊來使用我們的服務！</p>
+                    <button class="hidden" id="register">立即註冊</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>

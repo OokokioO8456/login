@@ -9,7 +9,7 @@ form.addEventListener("submit",(e)=>{
     const authenticated = authentication(username,password)
 
     if(authenticated){
-        window.href = "https://ookokioo8456.github.io/dev/Dashboard"
+        window.location.href = "https://ookokioo8456.github.io/dev/Dashboard"
     }else{
         window.location.href = "./error.html"
     }

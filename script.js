@@ -10,7 +10,8 @@ form.addEventListener("submit",(e)=>{
 
     if(authenticated){
         window.location.href = "https://ookokioo8456.github.io/dev/Dashboard"
-    }else{
+    }
+    else{
         window.location.href = "./error.html"
     }
 })
